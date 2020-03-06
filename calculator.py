@@ -7,13 +7,14 @@ print("Python Calculator")
 
 #changelogs
 def changelog():
-    print("Changelogs: Version 1.3")
-    print(" - Added absolute value")
+    print("Changelogs: Version 1.4")
+    print(" - Added greater than")
+    print(" - Added less than")
 
 def code():
     action = input("What do you want to do?\nOptions: Changelog, Calculate, Quit\n").lower()
     if action == "calculate":
-        print("Available operations: addition (+), subtraction (-), multiplication (*), division (/), exponential (^), absolute value (|)")
+        print("Available operations: add (+), subtract (-), multiply (*), divide (/), exponent (^), absolute value (|), greater than (>), less than (<)")
         op = input("Enter an operator: ")
         if op != "|":
             if op == "^":
@@ -48,6 +49,20 @@ def code():
                 print(num1 ^ num2)
             elif op == "|":
                 print(abs(num1))
+            elif op == ">":
+                if num1 > num2:
+                    print(num1)
+                elif num2 > num1:
+                    print(num2)
+                elif num1 == num2:
+                    print(num1_string + " = " + num2_string)
+            elif op == "<":
+                if num1 < num2:
+                    print(num1)
+                elif num2 < num1:
+                    print(num2)
+                elif num1 == num2:
+                    print(num1_string + " = " + num2_string)
             else:
                 print("No proper operator found, please try again")
     elif action == "changelog":
