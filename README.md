@@ -1,6 +1,9 @@
-# Python Calculator v1.4
+# Python Calculator v1.5
 My first python project! It's a simple python calculator to practice my basic skills.
 
 # Changelogs:
-- Added greater than.
-- Added less than.
+- Added factorial.
+- Major bug fixes
+	- Fixed exponential errors used incorrect operator
+	- Removed unnecessary code.
+	- Removed the integer limit on exponents, floats now allowed.
