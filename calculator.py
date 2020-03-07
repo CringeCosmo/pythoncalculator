@@ -7,12 +7,14 @@ print("Python Calculator.")
 
 #changelogs
 def changelog():
-    print("Changelogs: Version 1.5")
+    print("Changelogs: Version 1.5.1")
     print(" - Added factorial.")
     print(" - Major bug fixes")
     print("   - Fixed exponential errors (used incorrect operator)")
     print("   - Removed unnecessary code.")
     print("   - Removed the integer limit on exponents, floats now allowed.")
+    print(" - 1.5.1 fix: instructions did not show factorial option."
+
 
 def factorial(x):
     fac = x
@@ -25,7 +27,7 @@ def factorial(x):
 def code():
     action = input("What do you want to do?\nOptions: Changelog, Calculate, Quit\n").lower()
     if action == "calculate":
-        print("Available operations: add (+), subtract (-), multiply (*), divide (/), exponent (^), absolute value (|), greater than (>), less than (<)")
+        print("Available operations: add (+), subtract (-), multiply (*), divide (/), exponent (^), absolute value (|), greater than (>), less than (<), factorial (!)")
         op = input("Enter an operator: ")
         if op != "|" and op != "!":
             num1 = float(input("Enter a number: "))
@@ -72,4 +74,5 @@ def code():
         print("No proper input found, please try again.")
     code()
 
+#run
 code()
